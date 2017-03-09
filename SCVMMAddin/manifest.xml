@@ -1,0 +1,42 @@
+﻿<ConsoleAddIn 
+  xmlns="urn:VMM-AddIns-v1" 
+  Name="Display VM Additional data" 
+  Version="1.1.0.2" 
+  Author="vladano" 
+  Description="Get VLAN, IP, VM Path, ISO and Number of Checkpoint Data for SCVMM 2012 R2" 
+  FolderName="SCVMMAddin">
+  <ActionAddIn 
+    Name="Get VM Data" 
+    Contexts="VM" 
+    ShowInContextMenu="True" 
+    AssemblyName="SCVMMAddin" 
+    ActionType="Code" 
+    Icon="Get-VM-Data.ico">
+    <ButtonLabel>
+      Get VM Data
+    </ButtonLabel>
+  </ActionAddIn>
+  <ActionAddIn 
+    Name="Get VM Name" 
+    Contexts="VM" 
+    ShowInContextMenu="True" 
+    AssemblyName="SCVMMAddin" 
+    ActionType="Code" 
+    Icon="copy-VM-Name.ico">
+    <ButtonLabel>
+      Get VM Name
+    </ButtonLabel>
+  </ActionAddIn>
+  <ActionAddIn 
+    Name="Get VM IP" 
+    Contexts="VM" 
+    ShowInContextMenu="True" 
+    AssemblyName="SCVMMAddin" 
+    ActionType="Code" 
+    Icon="Network-Ip-Address-black.ico">
+    <ButtonLabel>
+      Get VM IP
+    </ButtonLabel>
+  </ActionAddIn>
+</ConsoleAddIn>
+

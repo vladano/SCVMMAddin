@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{605DADBD-0ABE-4CB3-8CCB-D3FB05F0C174}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCVMMAddin</RootNamespace>
+    <AssemblyName>SCVMMAddin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SystemCenter.VirtualMachineManager, Version=1.0.523.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.SystemCenter.VirtualMachineManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SystemCenter.VirtualMachineManager.UIAddIns, Version=1.0.523.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.SystemCenter.VirtualMachineManager.UIAddIns.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SystemCenter.VirtualMachineManager.UIAddIns.ContextTypes, Version=1.0.523.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.SystemCenter.VirtualMachineManager.UIAddIns.ContextTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AddIn" />
+    <Reference Include="System.AddIn.Contract" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCVMMAddin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="7zip\7z.dll" />
+    <Content Include="7zip\7z.exe" />
+    <Content Include="copy-VM-Name.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Get-VM-Data.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\cs\Errors.resources.dll" />
+    <Content Include="lib\cs\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\cs\Remoting.resources.dll" />
+    <Content Include="lib\cs\Utils.resources.dll" />
+    <Content Include="lib\de\Errors.resources.dll" />
+    <Content Include="lib\de\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\de\Remoting.resources.dll" />
+    <Content Include="lib\de\Utils.resources.dll" />
+    <Content Include="lib\es\Errors.resources.dll" />
+    <Content Include="lib\es\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\es\Remoting.resources.dll" />
+    <Content Include="lib\es\Utils.resources.dll" />
+    <Content Include="lib\fr\Errors.resources.dll" />
+    <Content Include="lib\fr\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\fr\Remoting.resources.dll" />
+    <Content Include="lib\fr\Utils.resources.dll" />
+    <Content Include="lib\hu\Errors.resources.dll" />
+    <Content Include="lib\hu\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\hu\Remoting.resources.dll" />
+    <Content Include="lib\hu\Utils.resources.dll" />
+    <Content Include="lib\it\Errors.resources.dll" />
+    <Content Include="lib\it\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\it\Remoting.resources.dll" />
+    <Content Include="lib\it\Utils.resources.dll" />
+    <Content Include="lib\ja\Errors.resources.dll" />
+    <Content Include="lib\ja\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\ja\Remoting.resources.dll" />
+    <Content Include="lib\ja\Utils.resources.dll" />
+    <Content Include="lib\ko\Errors.resources.dll" />
+    <Content Include="lib\ko\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\ko\Remoting.resources.dll" />
+    <Content Include="lib\ko\Utils.resources.dll" />
+    <Content Include="lib\Microsoft.SystemCenter.VirtualMachineManager.dll" />
+    <Content Include="lib\Microsoft.SystemCenter.VirtualMachineManager.UIAddIns.ContextTypes.dll" />
+    <Content Include="lib\Microsoft.SystemCenter.VirtualMachineManager.UIAddIns.dll" />
+    <Content Include="lib\nl\Errors.resources.dll" />
+    <Content Include="lib\nl\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\nl\Remoting.resources.dll" />
+    <Content Include="lib\nl\Utils.resources.dll" />
+    <Content Include="lib\pl\Errors.resources.dll" />
+    <Content Include="lib\pl\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\pl\Remoting.resources.dll" />
+    <Content Include="lib\pl\Utils.resources.dll" />
+    <Content Include="lib\pt-BR\Errors.resources.dll" />
+    <Content Include="lib\pt-BR\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\pt-BR\Remoting.resources.dll" />
+    <Content Include="lib\pt-BR\Utils.resources.dll" />
+    <Content Include="lib\pt-PT\Errors.resources.dll" />
+    <Content Include="lib\pt-PT\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\pt-PT\Remoting.resources.dll" />
+    <Content Include="lib\pt-PT\Utils.resources.dll" />
+    <Content Include="lib\ru\Errors.resources.dll" />
+    <Content Include="lib\ru\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\ru\Remoting.resources.dll" />
+    <Content Include="lib\ru\Utils.resources.dll" />
+    <Content Include="lib\sv\Errors.resources.dll" />
+    <Content Include="lib\sv\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\sv\Remoting.resources.dll" />
+    <Content Include="lib\sv\Utils.resources.dll" />
+    <Content Include="lib\tr\Errors.resources.dll" />
+    <Content Include="lib\tr\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\tr\Remoting.resources.dll" />
+    <Content Include="lib\tr\Utils.resources.dll" />
+    <Content Include="lib\zh-CHS\Errors.resources.dll" />
+    <Content Include="lib\zh-CHS\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\zh-CHS\Remoting.resources.dll" />
+    <Content Include="lib\zh-CHS\Utils.resources.dll" />
+    <Content Include="lib\zh-HK\Errors.resources.dll" />
+    <Content Include="lib\zh-HK\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\zh-HK\Remoting.resources.dll" />
+    <Content Include="lib\zh-HK\Utils.resources.dll" />
+    <Content Include="lib\zh-TW\Errors.resources.dll" />
+    <Content Include="lib\zh-TW\Microsoft.SystemCenter.VirtualMachineManager.resources.dll" />
+    <Content Include="lib\zh-TW\Remoting.resources.dll" />
+    <Content Include="lib\zh-TW\Utils.resources.dll" />
+    <Content Include="manifest.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Network-Ip-Address-black.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>del  "$(SolutionDir)out\*.*" /F /Q
+xcopy "$(TargetPath)" "$(SolutionDir)out" /y
+xcopy "$(TargetDir)manifest.xml" "$(SolutionDir)out" /y
+xcopy "$(TargetDir)*.ico" "$(SolutionDir)out" /y
+del  "$(SolutionDir)out\$(TargetName).zip"
+$(SolutionDir)7zip\7z.exe a -tzip "$(SolutionDir)out\$(TargetName).zip" "$(SolutionDir)out\*.*"
+del  "$(SolutionDir)out\*.ico" /F /Q
+del  "$(SolutionDir)out\*.xml" /F /Q
+del  "$(SolutionDir)out\*.dll" /F /Q
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
