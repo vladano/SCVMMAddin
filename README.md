@@ -1,5 +1,5 @@
 # SCVMMAddin
-Add-in for SCVMM 2012 R2 console.
+Add-in for SCVMM 2012 R2, 2016 and 2019 console.
 
 Display additional properties for each VM inside SCVMM 2012 R2 console (VLAn, IP addres, VM Path, Mounted ISO, Number of Checkpoint).
 
